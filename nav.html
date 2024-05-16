@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body class="m-page">
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="step.html" style="display: block; margin-bottom: 20px;">
+            Шаг
+        </a>
+        <a href="step2.html" style="display: block; margin-bottom: 20px;">
+            Шаг 2
+        </a>
+        <a href="step3.html" style="display: block; margin-bottom: 20px;">
+            Шаг 3
+        </a>
+        <a href="step4.html" style="display: block; margin-bottom: 20px;">
+            Шаг 4
+        </a>
+        <a href="step5.html" style="display: block; margin-bottom: 20px;">
+            Шаг 5
+        </a>
+        <a href="step6.html" style="display: block; margin-bottom: 20px;">
+            Шаг 6
+        </a>
+        <a href="step7.html" style="display: block; margin-bottom: 20px;">
+            Шаг 7
+        </a>
+        <a href="step8.html" style="display: block; margin-bottom: 20px;">
+            Шаг 8
+        </a>
+        <a href="step9.html" style="display: block; margin-bottom: 20px;">
+            Шаг 9
+        </a>
+        <a href="step10.html" style="display: block; margin-bottom: 20px;">
+            Шаг 10
+        </a>
+
+
+
+
+        <button data-modal="reqModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Оставить заявку
+        </button>
+        <button data-modal="thankModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Товар добавлен
+        </button>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="modal" id="reqModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.25 9.33496L8.75 26.835" stroke="#9E9A8E" stroke-linecap="square" stroke-linejoin="round" />
+                    <path d="M8.75 9.33496L26.25 26.835" stroke="#9E9A8E" stroke-linecap="square" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="h2">
+                Оставить заявку на звонок
+            </div>
+            <form action="" class="modal-form">
+                <div class="fg">
+                    <input type="text" placeholder="Ваше имя">
+                </div>
+                <div class="fg">
+                    <input type="tel" placeholder="+7 (___) ___-__-__">
+                </div>
+                <button class="m-btn m-btn-green">
+                    <span>Отправить</span>
+                    <img src="img/arrow.svg" alt="">
+                </button>
+            </form>
+            <div class="modal__hint">
+                <div class="text17">
+                    Нажимая на кнопку «Отправить», вы соглашаетесь с <a href="">Политикой конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal thank-modal" id="thankModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <svg width="35" height="36" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.25 9.33496L8.75 26.835" stroke="#9E9A8E" stroke-linecap="square" stroke-linejoin="round" />
+                    <path d="M8.75 9.33496L26.25 26.835" stroke="#9E9A8E" stroke-linecap="square" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <div class="thank-modal__inner">
+                <div class="h2">
+                    Товар добавлен в корзину!
+                </div>
+                <button class="m-btn m-btn-green">
+                    <span>Перейти в корзину</span>
+                    <img src="img/arrow.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="js/imask.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
